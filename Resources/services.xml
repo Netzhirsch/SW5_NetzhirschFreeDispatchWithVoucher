@@ -1,0 +1,13 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="netzhirsch_free_dispatch_with_voucher.subscriber.event_subscriber"
+                 class="NetzhirschFreeDispatchWithVoucher\Subscriber\EventSubscriber"
+				 public="true">
+            <argument type="service" id="dbal_connection"/>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+    </services>
+</container>

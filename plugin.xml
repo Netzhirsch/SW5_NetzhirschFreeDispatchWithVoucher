@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+
+    <label lang="de">Gutscheinunabhängige Versandkosten-Freigrenze</label>
+    <label lang="en">Voucher-independent shipping costs exemption limit</label>
+
+    <version>1.0.1</version>
+    <copyright>Copyright (c) 2021, Netzhirsch GbR</copyright>
+    <license>proprietary</license>
+    <link>https://www.netzhirsch.de</link>
+    <author>Netzhirsch GbR</author>
+    <compatibility minVersion="5.2.0" />
+
+    <description lang="de">
+        The free shipping allowance is based on the shopping cart value and is independent of redeemed vouchers. The order remains free of charge.
+    </description>
+    <description lang="en">
+        Die Versandkosten-Freigrenze wird auf den Warenkorb-Wert bezogen und ist unabhängig von eingelösten Gutscheinen. Die Bestellung bleibt also versandkostenfrei.
+    </description>
+
+    <changelog version="1.0.0">
+        <changes lang="de"><![CDATA[Erstveröffentlichung des Plugins.]]></changes>
+        <changes lang="en"><![CDATA[Initial Release of the plugin.]]></changes>
+    </changelog>
+
+    <changelog version="1.0.1">
+        <changes lang="de"><![CDATA[Kompatibilität zu Shopware 5.7.0 hergestellt.<br>Korrektur einer Rundungsdifferenz die bei bestimmten Beträgen dazu geführt hat, dass der Versand dennoch berrechnet wurde.]]></changes>
+        <changes lang="en"><![CDATA[Compatibility with Shopware 5.7.0 established.<br>Correction of a rounding difference which, for certain amounts, meant that the shipping was still charged.]]></changes>
+    </changelog>
+</plugin>
