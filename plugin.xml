@@ -4,7 +4,7 @@
     <label lang="de">Gutscheinunabhängige Versandkosten-Freigrenze</label>
     <label lang="en">Voucher-independent shipping costs exemption limit</label>
 
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <copyright>Copyright (c) 2021, Netzhirsch GbR</copyright>
     <license>proprietary</license>
     <link>https://www.netzhirsch.de</link>
@@ -26,5 +26,10 @@
     <changelog version="1.0.1">
         <changes lang="de"><![CDATA[Kompatibilität zu Shopware 5.7.0 hergestellt.<br>Korrektur einer Rundungsdifferenz die bei bestimmten Beträgen dazu geführt hat, dass der Versand dennoch berrechnet wurde.]]></changes>
         <changes lang="en"><![CDATA[Compatibility with Shopware 5.7.0 established.<br>Correction of a rounding difference which, for certain amounts, meant that the shipping was still charged.]]></changes>
+    </changelog>
+
+    <changelog version="1.0.2">
+        <changes lang="de">Fehlerbehebung beim Zugriff auf b.weight im leeren Warenkorb.</changes>
+        <changes lang="en">Troubleshooting when accessing b.weight in an empty shopping cart.</changes>
     </changelog>
 </plugin>

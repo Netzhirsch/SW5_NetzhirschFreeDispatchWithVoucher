@@ -39,6 +39,11 @@ class EventSubscriber implements SubscriberInterface
     public function subtractedVouchersFromBasket(Enlight_Hook_HookArgs $args)
     {
 	    $basket = $args->getReturn();
+
+        if (empty($basket)) {
+            return [];
+        }
+
 	    $vouchers = $this->getVouchers($basket['sessionID']);
 	    foreach ($vouchers as $voucher) {
 		    $basket['amount_display'] -= $voucher['price'];
